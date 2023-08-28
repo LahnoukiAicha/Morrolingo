@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Morrolingo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("{{ url_for('static', filename='bg2.jpg') }}");
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    margin-left: 20px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.inputbox ::placeholder{
+    color: #fff;
+    font-family: 'cursive';
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+  </style>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form  method="POST" action="/last.py">
+                    <h2>Eng-Darija Translator</h2>
+                    <div class="inputbox">
+                        <input type="text" name="english-input" placeholder=" Enter english sentence" required>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="darija-output" placeholder="" {% if output %}value="{{ output }}"{% endif %} disabled>
+                    </div>
+                    <button type="submit">Translate</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

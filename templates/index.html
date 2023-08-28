@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Morrolingo</title>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+        <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <style>
+    
+  </style>
+    </head>
+    <body>
+      <section class="home">
+        <header>
+          <img class="logo" src="{{ url_for('static', filename='logo.png') }}" alt="Image">
+          <ul class="navlist">
+              <li><a href="#">home</a></li>
+              <li><a href="#about">about us</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">contacts</a></li>
+          </ul>
+          <div class="bx bx-menu" id="menu-icon"></div>
+      </header>
+      <section class="content">
+          <div class="content-text">
+              <h1>MORROLINGO</h1>
+              <h5>Unlock Communication with Instant English to <span>DARIJA</span> Translation</h5>
+              <p>Welcome to the language revolution! Our translation app takes you on a captivating journey through the vibrant world of Darija and English. Break free from language barriers and immerse yourself in the magic of communication. Whether you're exploring Moroccan culture, building friendships, or embarking on business ventures, our app is your trusty companion, bridging the gap between Darija and English with flair and precision.</p>
+              <div class="buttone">
+              <a href="/try.html" class="ctaa"  ><i class="ri-translate-2"></i>Translate</a>
+              <a href="#">subscribe</a>
+              </div>
+          </div>
+          <div class="gallery">
+            <img src="{{ url_for('static', filename='image1.jpg') }}" >
+            <img src="{{ url_for('static', filename='image2.jpg') }}" >
+            <img src="{{ url_for('static', filename='image3.jpg') }}" >
+            <img src="{{ url_for('static', filename='image4.jpg') }}" >
+          </div>
+
+      </section>
+      </section>
+        
+        <div class="text-box">
+            <div class="container">
+               <h1>Our Vision</h1>
+               <p>We embarked on this project with a clear objective in mind - to bridge the language gap and foster cross-cultural communication. Our team recognized the need for an English to Darija translation tool that would enable seamless interaction between English speakers and the vibrant Moroccan community. With diverse backgrounds in linguistics, technology, and a deep appreciation for cultural exchange, our passionate team collaborated to create an innovative solution. Through this project, we aim to empower individuals to engage with the rich beauty of Darija, while promoting understanding and connection between different linguistic communities. Together, we have combined our expertise and dedication to deliver a reliable and user-friendly translation experience for you.</p>
+            </div>
+            <div class="picture">
+              <img src="{{ url_for('static', filename='picture.png') }}"/>
+            </div>
+         </div>
+        <section>
+          <div class="row">
+          <h1 id="about">Our Team</h1>
+          </div>
+          <div class="row">
+          <!-- Column 1-->
+          <div class="column">
+           <div class="card">
+             <div class="img-container">
+               <img src="{{ url_for('static', filename='aicha.jpeg') }}" />
+             </div>
+             <h3>Aicha Lhanouki</h3>
+             <p>Project Manager</p>
+             <div class="icons">
+               <a href="#">
+                 <i class="fab fa-twitter"></i>
+               </a>
+               <a href="#">
+                 <i class="fab fa-linkedin"></i>
+               </a>
+               <a href="#">
+                 <i class="fab fa-github"></i>
+               </a>
+               <a href="#">
+                 <i class="fas fa-envelope"></i>
+               </a>
+             </div>
+           </div>
+          </div>
+          <!-- Column 2-->
+          <div class="column">
+           <div class="card">
+             <div class="img-container">
+              <img src="{{ url_for('static', filename='yassamn.png') }}" >
+             </div>
+             <h3>Yassamine Lmchaouri</h3>
+             <p>Backend</p>
+             <div class="icons">
+               <a href="#">
+                 <i class="fab fa-twitter"></i>
+               </a>
+               <a href="#">
+                 <i class="fab fa-linkedin"></i>
+               </a>
+               <a href="#">
+                 <i class="fab fa-github"></i>
+               </a>
+               <a href="#">
+                 <i class="fas fa-envelope"></i>
+               </a>
+             </div>
+           </div>
+          </div>
+          <!-- Column 3-->
+          <div class="column">
+           <div class="card">
+             <div class="img-container">
+               <img src="{{ url_for('static', filename='ibtissam2.jpeg') }}" />
+             </div>
+             <h3>Hadiq Ibtissam</h3>
+             <p>Frontend</p>
+             <div class="icons">
+               <a href="#">
+                 <i class="fab fa-twitter"></i>
+               </a>
+               <a href="#">
+                 <i class="fab fa-linkedin"></i>
+               </a>
+               <a href="#">
+                 <i class="fab fa-github"></i>
+               </a>
+               <a href="#">
+                 <i class="fas fa-envelope"></i>
+               </a>
+             </div>
+           </div>
+          </div>
+          </div>
+          
+          </section>
+          <section>
+          <div class="row">
+              <!-- Column 1-->
+          <div class="column">
+             <div class="card">
+               <div class="img-container">
+                 <img src="{{ url_for('static', filename='youssera.jpeg') }}" />
+               </div>
+               <h3>Yousra Khalloufi</h3>
+               <p>Frontend</p>
+               <div class="icons">
+                 <a href="#">
+                   <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fab fa-linkedin"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fab fa-github"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fas fa-envelope"></i>
+                 </a>
+               </div>
+             </div>
+           </div>
+           <!-- Column 2-->
+           <div class="column">
+             <div class="card">
+               <div class="img-container">
+                 <img src="{{ url_for('static', filename='ibtissam1.jpeg') }}" />
+               </div>
+               <h3>Manadir Ibtissam</h3>
+               <p>The project report author1</p>
+               <div class="icons">
+                 <a href="#">
+                   <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fab fa-linkedin"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fab fa-github"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fas fa-envelope"></i>
+                 </a>
+               </div>
+             </div>
+           </div>
+           <!-- Column 3-->
+           <div class="column">
+             <div class="card">
+               <div class="img-container">
+                 <img src="{{ url_for('static', filename='fati.jpeg') }}" />
+               </div>
+               <h3>Fatimazhra </h3>
+               <p>The project report author2</p>
+               <div class="icons">
+                 <a href="#">
+                   <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fab fa-linkedin"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fab fa-github"></i>
+                 </a>
+                 <a href="#">
+                   <i class="fas fa-envelope"></i>
+                 </a>
+               </div>
+             </div>
+           </div>
+          </div>
+          </div>
+          </section>
+          </section>
+      
+          <footer>
+            <p> @copyright by Morrolingo</p>
+        </footer>
+      
+      
+  </body>
+</html>
+      
+      
